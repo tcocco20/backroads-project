@@ -1,10 +1,15 @@
 import FacebookIcon from "./FacebookIcon";
-const icons = () => {
+import SquareSpaceIcon from "./SquareSpaceIcon";
+import XIcon from "./XIcon";
+
+const Icons = () => {
   return (
-    <div>
+    <div className="flex gap-3 text-blue-300 h-4">
       <FacebookIcon />
+      <XIcon />
+      <SquareSpaceIcon />
     </div>
   );
 };
 
-export default icons;
+export default Icons;
