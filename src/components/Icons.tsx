@@ -4,7 +4,7 @@ import XIcon from "./XIcon";
 
 const Icons = () => {
   return (
-    <div className="flex gap-3 text-blue-300 h-4">
+    <div className="flex gap-3 text-blue-300 h-5">
       <FacebookIcon />
       <XIcon />
       <SquareSpaceIcon />

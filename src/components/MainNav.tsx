@@ -7,14 +7,14 @@ import Icons from "./Icons";
 
 export default function MainNav() {
   return (
-    <Navbar className="shadow-lg">
+    <Navbar className="shadow-lg" position="sticky">
       <NavbarBrand>
         <img alt="Backroads Logo" src={logo} />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
-            className="hover:text-cyan-400/70"
+            className="hover:text-primaryBlue-500 transition-colors duration-300"
             color="foreground"
             href="#home"
           >
@@ -22,17 +22,29 @@ export default function MainNav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#about">
+          <Link
+            className="hover:text-primaryBlue-500 transition-colors duration-300"
+            color="foreground"
+            href="#about"
+          >
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#services">
+          <Link
+            className="hover:text-primaryBlue-500 transition-colors duration-300"
+            color="foreground"
+            href="#services"
+          >
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#links">
+          <Link
+            className="hover:text-primaryBlue-500 transition-colors duration-300"
+            color="foreground"
+            href="#links"
+          >
             Tours
           </Link>
         </NavbarItem>
