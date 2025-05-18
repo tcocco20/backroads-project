@@ -3,15 +3,19 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
   NavbarMenuToggle,
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 
 import logo from "../images/logo.svg";
 
-import Icons from "./Icons";
+import Icons from "./ui/Icons";
 
 export default function MainNav() {
+  const menuItems = ["Home", "About", "Services", "Tours"];
+
   return (
     <Navbar className="fixed shadow-lg" isBlurred={false}>
       <NavbarBrand>
@@ -63,6 +67,18 @@ export default function MainNav() {
           <Icons />
         </NavbarItem>
       </NavbarContent>
+      <NavbarMenu>
+        {menuItems.map((item) => (
+          <NavbarMenuItem
+            key={`${item}`}
+            className="hover:bg-primaryBlue-300/80 hover:ps-1 transition-all duration-400"
+          >
+            <Link className="w-full p-4" color="foreground" href="#" size="lg">
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 }

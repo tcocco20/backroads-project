@@ -1,3 +1,5 @@
+import MainButton from "../ui/MainButton";
+
 const LandingSection = () => {
   return (
     <section className="min-h-screen relative bg-center bg-cover bg-no-repeat bg-[url('/src/images/main.jpeg')]">
@@ -7,8 +9,9 @@ const LandingSection = () => {
             <h1 className="text-5xl font-semibold">Continue Exploring</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              fuga.
+              fuga. Lorem ipsum dolor sit.
             </p>
+            <MainButton size="lg" styleType="primary" text="Explore Tours" />
           </div>
         </div>
       </div>
